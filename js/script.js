@@ -19,3 +19,19 @@ window.onscroll=function(){
         
     }
 }
+
+var members = document.querySelectorAll(".team .mem");
+var pop_up = document.querySelector(".pop-up");
+var social_pop_up = document.querySelectorAll(".socail-pop-up");
+
+
+for (var x = 0 ; x<members.length;x++){
+    members[x].addEventListener("mouseover",function(){
+        this.children[1].setAttribute("style","transform:translateX(0)")
+        this.children[0].setAttribute("style","transform:translateX(-200px)")
+    })
+    members[x].addEventListener("mouseleave",function(){
+        this.children[1].setAttribute("style","transform:translateX(-160px)")
+        this.children[0].setAttribute("style","transform:translateX(0)")
+    })
+}
