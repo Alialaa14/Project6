@@ -1,0 +1,347 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --main-color:#f05435;
+  --section-color:rgb(20, 12, 12);
+}
+
+body {
+  height: 20000px;
+}
+
+header .navbar-brand {
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  text-transform: uppercase;
+}
+
+header .navbar-brand span {
+  color: var(--main-color);
+}
+
+header .navbar-toggler {
+  color: var(--main-color);
+}
+
+header .navbar-toggler:hover, header .navbar-toggler:focus, header .navbar-toggler:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+header .navbar-collapse .nav-link {
+  color: #FFF;
+  -webkit-transition: color .4s ease-in-out;
+  transition: color .4s ease-in-out;
+}
+
+header .navbar-collapse .nav-link:hover {
+  color: var(--main-color);
+}
+
+@media (min-width: 992px) {
+  header .navbar-expand-lg .navbar-collapse {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
+.home {
+  background-image: url("../images/home-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 800px;
+}
+
+.home .info .row {
+  padding-top: 160px;
+}
+
+.home .get_started {
+  padding-top: 100px;
+  padding-left: 40px;
+  color: white;
+}
+
+.home .get_started p {
+  font-weight: bold;
+  color: var(--main-color);
+  font-size: 18px;
+}
+
+.home .get_started h3 {
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.home .get_started a {
+  display: inline-block;
+  padding: 8px 20px;
+  color: white;
+  border-radius: 8px;
+  background-color: var(--main-color);
+  margin-top: 10px;
+}
+
+.home .get_started a:hover {
+  -webkit-box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.home .get_started .btn:focus, .home .get_started .btn:active {
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+@media (max-width: 727px) {
+  .home {
+    height: 1000px;
+    text-align: center;
+  }
+  .home .get_started h3 {
+    font-size: 30px;
+  }
+}
+
+.about {
+  background-color: var(--section-color);
+}
+
+.about .about-details {
+  padding-top: 150px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.about .about-details h5 {
+  color: var(--main-color);
+  font-weight: bold;
+}
+
+.about .about-details h3 {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.about .about-details p {
+  line-height: 1.8;
+}
+
+.about .about-details ul {
+  margin-top: 10px;
+}
+
+.about .about-details ul li {
+  line-height: 1.8;
+}
+
+.about .about-details ul li i {
+  color: var(--main-color);
+}
+
+.about .about-details ul li span {
+  margin-left: 10px;
+}
+
+.about .img {
+  width: 100%;
+  height: 100%;
+}
+
+.about .img img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 727px) {
+  .about .about-details h5, .about .about-details h3, .about .about-details p {
+    text-align: center;
+  }
+  .about .about-details h3 {
+    font-size: 30px;
+  }
+}
+
+.statis {
+  background-image: url("../images/counter-bg.jpg");
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: white;
+}
+
+.statis .content {
+  margin-bottom: 10px;
+}
+
+.statis h4 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.popular {
+  background-color: #140c0c;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.popular .heading {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.popular .row {
+  margin-top: 40px;
+}
+
+.popular .card {
+  background-color: transparent;
+  margin-bottom: 20px;
+  -webkit-perspective: 2000px;
+          perspective: 2000px;
+  overflow: hidden;
+}
+
+.popular .card img {
+  -webkit-transition: all .6s ease-in-out;
+  transition: all .6s ease-in-out;
+}
+
+.popular .card img:hover {
+  -webkit-transform: translateZ(200px);
+          transform: translateZ(200px);
+}
+
+.popular .card .card-body {
+  border-right: 1px solid #8a8a8a80;
+  border-left: 1px solid #8a8a8a80;
+  border-bottom: 1px solid #8a8a8a80;
+}
+
+.popular .card .card-body .card-title {
+  font-size: 20px;
+}
+
+.popular .card .readmore {
+  padding: 7px 18px;
+  background-color: var(--main-color);
+  color: white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  margin-top: 14px;
+}
+
+.popular .card .readmore:hover {
+  color: var(--main-color);
+  background-color: white;
+}
+
+.popular .row .card .card-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.popular .row .card .card-details i {
+  color: var(--main-color);
+}
+
+.popular .row .card .card-details span {
+  margin-left: 10px;
+}
+
+.plan {
+  background-color: var(--section-color);
+  color: white;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+
+.plan .row {
+  margin-top: 50px;
+}
+
+.plan .heading {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.plan .plans {
+  -webkit-box-shadow: 0 0 10px rgba(189, 187, 187, 0.068);
+          box-shadow: 0 0 10px rgba(189, 187, 187, 0.068);
+  padding: 20px 0;
+  border: 1px solid #8a8a8a80;
+  margin-bottom: 15px;
+}
+
+.plan .plans p {
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.plan .plans h3 {
+  font-weight: 500;
+  font-size: 27px;
+}
+
+.plan .plans h3 span {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.plan .plans a {
+  padding: 7px 18px;
+  background-color: var(--main-color);
+  color: white;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  margin: 10px 0;
+}
+
+.plan .plans a:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+.plan .plans ul {
+  line-height: 2.9;
+}
+
+.plan .plans ul i.fa-check {
+  color: var(--main-color);
+}
+
+.plan .plans ul i.fa-xmark {
+  color: white;
+}
+
+.plan .plans ul span {
+  margin-left: 10px;
+}
+
+@media (min-width: 728px) {
+  .active {
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+}
+/*# sourceMappingURL=main.css.map */
